@@ -1,0 +1,211 @@
+body{
+    display: flex;
+    min-width: 100vmin;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px auto;
+}
+.dashboard{
+    line-height: 20px;
+    font-size: 20px;
+    color: blue;
+    text-shadow: 2px 2px 5px #fff;
+    cursor: pointer;
+}
+#sidebar{
+  background:lightgray;
+  position: relative;
+  transition: all 0.5s ease;
+  width: 250px;
+/*      background: whitesmoke;*/
+left: -20px;
+margin-bottom: 0;
+ }
+ ul li{
+   list-style: none;
+ }
+ ul li a{
+       text-decoration: none;
+       line-height: 30px;
+        transition: 0.2s all;
+        padding-left: 7px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        
+ }
+   ul li a:hover{
+      padding-left: 20px;
+      color: purple;
+     
+ }
+ ul li a i{
+     margin-right: 8px;
+ }
+#check{
+/*        position:absolute;*/
+    display:none;
+}
+label #btn{
+/*        position:relative;*/
+    left:-10px;
+    font-size:30px;
+    position:absolute;
+    cursor: pointer;
+     top: 0;
+     padding:30px;
+     transition: all .5s ease;
+     display: none;
+}
+label #btn:hover{
+    color: green;
+}
+  label #cancel{
+    position:relative;
+    margin-left:35px;
+    font-size:18px;
+    z-index: 1111;
+    margin-top: -30px;
+    opacity: 0;
+     transition: all .2s ease;
+     
+}
+label #cancel:hover{
+    color: red;
+}
+
+.main{
+    display: flex;
+   margin-top: 10px;
+   margin-bottom: 0;
+   width: 100vw;
+   justify-content: space-around;
+       
+}
+.inner-box{
+    width: 75%;
+    margin-top: 20px;
+    /* right: 100px; */
+}
+
+/*mobile screen*/
+/*@media screen and (max-width:390px){
+        .inner-box2{
+      margin-left:20px;
+     display:none;
+     width:80vmin;
+    
+    }
+    
+}*/
+
+
+@media screen and (min-width:499px){
+      #sidebar{
+  width: -225px;
+  left: -1000px;
+  position: relative;
+  transition: all 0.5s ease;
+/*      background: whitesmoke;*/
+ }
+ label #btn{
+     display: block;
+ }
+ #menu{
+     display:none;
+ }
+/* label #btn:active ~ .inner-box{
+     display: block;
+ }*/
+
+    #check:checked ~ .sidebar{
+    left: 0px;
+}
+  #check:checked ~ label #btn{
+    left: 250px;
+    display: none;
+    pointer-events:none;
+}
+     #check:checked ~ label #cancel{
+    left: 200px;
+    opacity: 1;
+    cursor:pointer; 
+}
+}
+@media screen and (max-width:400px){
+    #sidebar{
+  width: -250px;
+  left: -225px;
+  position: relative;
+  transition: all 0.5s ease;
+/*      background: whitesmoke;*/
+ }
+ .inner-box2{
+     margin-top:-600px;
+ }
+ .profile-image{
+     margin-top:-200px;
+ }
+ label #btn{
+     display: block;
+ }
+/* label #btn:active ~ .inner-box{
+     display: block;
+ }*/
+
+    #check:checked ~ .sidebar{
+    left: 10px;
+}
+  #check:checked ~ label #btn{
+    left: 250px;
+    display: none;
+    pointer-events:none;
+}
+
+     #check:checked ~ label #cancel{
+    left: 200px;
+    opacity: 1;
+    cursor:pointer; 
+}
+    
+}
+@media screen and (min-width:699px){
+    body{
+        color:coral;
+        display:block;
+        width: 100vmin;
+ 
+    } 
+    .inner-box2{
+        margin-left:-10%;
+        top:0;
+    
+     }
+    #sidebar{
+  width: -250px;
+  left: -1000px;
+  position: relative;
+  transition: all 0.5s ease;
+
+/*      background: whitesmoke;*/
+ }
+ label #btn{
+     display: block;
+ }
+
+    #check:checked ~ .sidebar{
+    left: 0px;
+}
+  #check:checked ~ label #btn{
+    left: 250px;
+    display: none;
+    pointer-events:none;
+}
+
+     #check:checked ~ label #cancel{
+    left: 170px;
+    opacity: 1;
+    cursor:pointer; 
+}
+
+}

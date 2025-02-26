@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main_style.css" />
+    <title>Start Page</title>
+    <style>
+      body {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .container{
+        margin-top:15%;
+        width: 60vmin;
+        height: 25vmin;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgb(224, 250, 240);
+
+      }
+      .btn{
+        margin: 20px auto;
+      }
+      .btn-secondary{
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body> <div class="container">
+    <a href="start-xampp.bat" class="btn btn-secondary" download> Start XAMPP Services</a>
+    <a
+      href="http://localhost/hogem/"
+      class="btn btn-primary"
+      >House of Grace App</a
+    >
+    
+  </div>
+  <script type="text/javascript">
+    // fiveserver.config.js
+    module.exports = {
+      php: "C://xampp//php//php.exe", // Windows
+    };
+  </script>
+  </body>
+</html>
